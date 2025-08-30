@@ -38,3 +38,16 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/your-username/mangrove_watch.git
 cd mangrove_watch
+
+
+### 2. Install Dependencies
+Make sure you have **Node.js** and **npm** installed.  
+Then run:
+```bash
+npm install
+
+
+### 3. Clone the Repository
+      npm start
+
+### 4. Run on respective server provided.
