@@ -1,0 +1,204 @@
+export interface MangroveLocation {
+  id: number;
+  lat: number;
+  lng: number;
+}
+
+export interface Incident {
+  id: number;
+  lat: number;
+  lng: number;
+  type: 'Illegal Cutting' | 'Dumping' | 'Erosion';
+  timestamp: string;
+}
+
+export interface User {
+  id: number;
+  name: string;
+  points: number;
+  badge: 'Newbie' | 'Mangrove Guardian' | 'Eco Warrior' | 'Master Guardian';
+}
+
+export interface PhotoCollection {
+  user_input_photos: string[];
+  satellite_photos: string[];
+}
+
+export const mangroveLocations: MangroveLocation[] = [
+  {"id":1,"lat":21.501,"lng":72.907}, {"id":2,"lat":21.502,"lng":72.908}, {"id":3,"lat":21.503,"lng":72.909},
+  {"id":4,"lat":21.504,"lng":72.910}, {"id":5,"lat":21.505,"lng":72.911}, {"id":6,"lat":21.506,"lng":72.912},
+  {"id":7,"lat":21.507,"lng":72.913}, {"id":8,"lat":21.508,"lng":72.914}, {"id":9,"lat":21.509,"lng":72.915},
+  {"id":10,"lat":21.510,"lng":72.916}, {"id":11,"lat":21.511,"lng":72.917}, {"id":12,"lat":21.512,"lng":72.918},
+  {"id":13,"lat":21.513,"lng":72.919}, {"id":14,"lat":21.514,"lng":72.920}, {"id":15,"lat":21.515,"lng":72.921},
+  {"id":16,"lat":21.516,"lng":72.922}, {"id":17,"lat":21.517,"lng":72.923}, {"id":18,"lat":21.518,"lng":72.924},
+  {"id":19,"lat":21.519,"lng":72.925}, {"id":20,"lat":21.520,"lng":72.926}, {"id":21,"lat":21.521,"lng":72.927},
+  {"id":22,"lat":21.522,"lng":72.928}, {"id":23,"lat":21.523,"lng":72.929}, {"id":24,"lat":21.524,"lng":72.930},
+  {"id":25,"lat":21.525,"lng":72.931}, {"id":26,"lat":21.526,"lng":72.932}, {"id":27,"lat":21.527,"lng":72.933},
+  {"id":28,"lat":21.528,"lng":72.934}, {"id":29,"lat":21.529,"lng":72.935}, {"id":30,"lat":21.530,"lng":72.936},
+  {"id":31,"lat":21.531,"lng":72.937}, {"id":32,"lat":21.532,"lng":72.938}, {"id":33,"lat":21.533,"lng":72.939},
+  {"id":34,"lat":21.534,"lng":72.940}, {"id":35,"lat":21.535,"lng":72.941}, {"id":36,"lat":21.536,"lng":72.942},
+  {"id":37,"lat":21.537,"lng":72.943}, {"id":38,"lat":21.538,"lng":72.944}, {"id":39,"lat":21.539,"lng":72.945},
+  {"id":40,"lat":21.540,"lng":72.946}, {"id":41,"lat":21.541,"lng":72.947}, {"id":42,"lat":21.542,"lng":72.948},
+  {"id":43,"lat":21.543,"lng":72.949}, {"id":44,"lat":21.544,"lng":72.950}, {"id":45,"lat":21.545,"lng":72.951},
+  {"id":46,"lat":21.546,"lng":72.952}, {"id":47,"lat":21.547,"lng":72.953}, {"id":48,"lat":21.548,"lng":72.954},
+  {"id":49,"lat":21.549,"lng":72.955}, {"id":50,"lat":21.550,"lng":72.956}
+];
+
+export const incidents: Incident[] = [
+  {"id":1,"lat":21.501,"lng":72.907,"type":"Illegal Cutting","timestamp":"2025-08-01"},
+  {"id":2,"lat":21.502,"lng":72.908,"type":"Dumping","timestamp":"2025-08-02"},
+  {"id":3,"lat":21.503,"lng":72.909,"type":"Erosion","timestamp":"2025-08-03"},
+  {"id":4,"lat":21.504,"lng":72.910,"type":"Illegal Cutting","timestamp":"2025-08-04"},
+  {"id":5,"lat":21.505,"lng":72.911,"type":"Dumping","timestamp":"2025-08-05"},
+  {"id":6,"lat":21.506,"lng":72.912,"type":"Erosion","timestamp":"2025-08-06"},
+  {"id":7,"lat":21.507,"lng":72.913,"type":"Illegal Cutting","timestamp":"2025-08-07"},
+  {"id":8,"lat":21.508,"lng":72.914,"type":"Dumping","timestamp":"2025-08-08"},
+  {"id":9,"lat":21.509,"lng":72.915,"type":"Erosion","timestamp":"2025-08-09"},
+  {"id":10,"lat":21.510,"lng":72.916,"type":"Illegal Cutting","timestamp":"2025-08-10"},
+  {"id":11,"lat":21.511,"lng":72.917,"type":"Dumping","timestamp":"2025-08-11"},
+  {"id":12,"lat":21.512,"lng":72.918,"type":"Erosion","timestamp":"2025-08-12"},
+  {"id":13,"lat":21.513,"lng":72.919,"type":"Illegal Cutting","timestamp":"2025-08-13"},
+  {"id":14,"lat":21.514,"lng":72.920,"type":"Dumping","timestamp":"2025-08-14"},
+  {"id":15,"lat":21.515,"lng":72.921,"type":"Erosion","timestamp":"2025-08-15"},
+  {"id":16,"lat":21.516,"lng":72.922,"type":"Illegal Cutting","timestamp":"2025-08-16"},
+  {"id":17,"lat":21.517,"lng":72.923,"type":"Dumping","timestamp":"2025-08-17"},
+  {"id":18,"lat":21.518,"lng":72.924,"type":"Erosion","timestamp":"2025-08-18"},
+  {"id":19,"lat":21.519,"lng":72.925,"type":"Illegal Cutting","timestamp":"2025-08-19"},
+  {"id":20,"lat":21.520,"lng":72.926,"type":"Dumping","timestamp":"2025-08-20"},
+  {"id":21,"lat":21.521,"lng":72.927,"type":"Erosion","timestamp":"2025-08-21"},
+  {"id":22,"lat":21.522,"lng":72.928,"type":"Illegal Cutting","timestamp":"2025-08-22"},
+  {"id":23,"lat":21.523,"lng":72.929,"type":"Dumping","timestamp":"2025-08-23"},
+  {"id":24,"lat":21.524,"lng":72.930,"type":"Erosion","timestamp":"2025-08-24"},
+  {"id":25,"lat":21.525,"lng":72.931,"type":"Illegal Cutting","timestamp":"2025-08-25"},
+  {"id":26,"lat":21.526,"lng":72.932,"type":"Dumping","timestamp":"2025-08-26"},
+  {"id":27,"lat":21.527,"lng":72.933,"type":"Erosion","timestamp":"2025-08-27"},
+  {"id":28,"lat":21.528,"lng":72.934,"type":"Illegal Cutting","timestamp":"2025-08-28"},
+  {"id":29,"lat":21.529,"lng":72.935,"type":"Dumping","timestamp":"2025-08-29"},
+  {"id":30,"lat":21.530,"lng":72.936,"type":"Erosion","timestamp":"2025-08-30"},
+  {"id":31,"lat":21.531,"lng":72.937,"type":"Illegal Cutting","timestamp":"2025-08-02"},
+  {"id":32,"lat":21.532,"lng":72.938,"type":"Dumping","timestamp":"2025-08-03"},
+  {"id":33,"lat":21.533,"lng":72.939,"type":"Erosion","timestamp":"2025-08-04"},
+  {"id":34,"lat":21.534,"lng":72.940,"type":"Illegal Cutting","timestamp":"2025-08-05"},
+  {"id":35,"lat":21.535,"lng":72.941,"type":"Dumping","timestamp":"2025-08-06"},
+  {"id":36,"lat":21.536,"lng":72.942,"type":"Erosion","timestamp":"2025-08-07"},
+  {"id":37,"lat":21.537,"lng":72.943,"type":"Illegal Cutting","timestamp":"2025-08-08"},
+  {"id":38,"lat":21.538,"lng":72.944,"type":"Dumping","timestamp":"2025-08-09"},
+  {"id":39,"lat":21.539,"lng":72.945,"type":"Erosion","timestamp":"2025-08-10"},
+  {"id":40,"lat":21.540,"lng":72.946,"type":"Illegal Cutting","timestamp":"2025-08-11"},
+  {"id":41,"lat":21.541,"lng":72.947,"type":"Dumping","timestamp":"2025-08-12"},
+  {"id":42,"lat":21.542,"lng":72.948,"type":"Erosion","timestamp":"2025-08-13"},
+  {"id":43,"lat":21.543,"lng":72.949,"type":"Illegal Cutting","timestamp":"2025-08-14"},
+  {"id":44,"lat":21.544,"lng":72.950,"type":"Dumping","timestamp":"2025-08-15"},
+  {"id":45,"lat":21.545,"lng":72.951,"type":"Erosion","timestamp":"2025-08-16"},
+  {"id":46,"lat":21.546,"lng":72.952,"type":"Illegal Cutting","timestamp":"2025-08-17"},
+  {"id":47,"lat":21.547,"lng":72.953,"type":"Dumping","timestamp":"2025-08-18"},
+  {"id":48,"lat":21.548,"lng":72.954,"type":"Erosion","timestamp":"2025-08-19"},
+  {"id":49,"lat":21.549,"lng":72.955,"type":"Illegal Cutting","timestamp":"2025-08-20"},
+  {"id":50,"lat":21.550,"lng":72.956,"type":"Dumping","timestamp":"2025-08-21"},
+  {"id":51,"lat":21.551,"lng":72.957,"type":"Erosion","timestamp":"2025-08-22"},
+  {"id":52,"lat":21.552,"lng":72.958,"type":"Illegal Cutting","timestamp":"2025-08-23"},
+  {"id":53,"lat":21.553,"lng":72.959,"type":"Dumping","timestamp":"2025-08-24"},
+  {"id":54,"lat":21.554,"lng":72.960,"type":"Erosion","timestamp":"2025-08-25"},
+  {"id":55,"lat":21.555,"lng":72.961,"type":"Illegal Cutting","timestamp":"2025-08-26"},
+  {"id":56,"lat":21.556,"lng":72.962,"type":"Dumping","timestamp":"2025-08-27"},
+  {"id":57,"lat":21.557,"lng":72.963,"type":"Erosion","timestamp":"2025-08-28"},
+  {"id":58,"lat":21.558,"lng":72.964,"type":"Illegal Cutting","timestamp":"2025-08-29"},
+  {"id":59,"lat":21.559,"lng":72.965,"type":"Dumping","timestamp":"2025-08-30"},
+  {"id":60,"lat":21.560,"lng":72.966,"type":"Erosion","timestamp":"2025-08-01"},
+  {"id":61,"lat":21.561,"lng":72.967,"type":"Illegal Cutting","timestamp":"2025-08-02"},
+  {"id":62,"lat":21.562,"lng":72.968,"type":"Dumping","timestamp":"2025-08-03"},
+  {"id":63,"lat":21.563,"lng":72.969,"type":"Erosion","timestamp":"2025-08-04"},
+  {"id":64,"lat":21.564,"lng":72.970,"type":"Illegal Cutting","timestamp":"2025-08-05"},
+  {"id":65,"lat":21.565,"lng":72.971,"type":"Dumping","timestamp":"2025-08-06"},
+  {"id":66,"lat":21.566,"lng":72.972,"type":"Erosion","timestamp":"2025-08-07"},
+  {"id":67,"lat":21.567,"lng":72.973,"type":"Illegal Cutting","timestamp":"2025-08-08"},
+  {"id":68,"lat":21.568,"lng":72.974,"type":"Dumping","timestamp":"2025-08-09"},
+  {"id":69,"lat":21.569,"lng":72.975,"type":"Erosion","timestamp":"2025-08-10"},
+  {"id":70,"lat":21.570,"lng":72.976,"type":"Illegal Cutting","timestamp":"2025-08-11"},
+  {"id":71,"lat":21.571,"lng":72.977,"type":"Dumping","timestamp":"2025-08-12"},
+  {"id":72,"lat":21.572,"lng":72.978,"type":"Erosion","timestamp":"2025-08-13"},
+  {"id":73,"lat":21.573,"lng":72.979,"type":"Illegal Cutting","timestamp":"2025-08-14"},
+  {"id":74,"lat":21.574,"lng":72.980,"type":"Dumping","timestamp":"2025-08-15"},
+  {"id":75,"lat":21.575,"lng":72.981,"type":"Erosion","timestamp":"2025-08-16"},
+  {"id":76,"lat":21.576,"lng":72.982,"type":"Illegal Cutting","timestamp":"2025-08-17"},
+  {"id":77,"lat":21.577,"lng":72.983,"type":"Dumping","timestamp":"2025-08-18"},
+  {"id":78,"lat":21.578,"lng":72.984,"type":"Erosion","timestamp":"2025-08-19"},
+  {"id":79,"lat":21.579,"lng":72.985,"type":"Illegal Cutting","timestamp":"2025-08-20"},
+  {"id":80,"lat":21.580,"lng":72.986,"type":"Dumping","timestamp":"2025-08-21"},
+  {"id":81,"lat":21.581,"lng":72.987,"type":"Erosion","timestamp":"2025-08-22"},
+  {"id":82,"lat":21.582,"lng":72.988,"type":"Illegal Cutting","timestamp":"2025-08-23"},
+  {"id":83,"lat":21.583,"lng":72.989,"type":"Dumping","timestamp":"2025-08-24"},
+  {"id":84,"lat":21.584,"lng":72.990,"type":"Erosion","timestamp":"2025-08-25"},
+  {"id":85,"lat":21.585,"lng":72.991,"type":"Illegal Cutting","timestamp":"2025-08-26"},
+  {"id":86,"lat":21.586,"lng":72.992,"type":"Dumping","timestamp":"2025-08-27"},
+  {"id":87,"lat":21.587,"lng":72.993,"type":"Erosion","timestamp":"2025-08-28"},
+  {"id":88,"lat":21.588,"lng":72.994,"type":"Illegal Cutting","timestamp":"2025-08-29"},
+  {"id":89,"lat":21.589,"lng":72.995,"type":"Dumping","timestamp":"2025-08-30"},
+  {"id":90,"lat":21.590,"lng":72.996,"type":"Erosion","timestamp":"2025-08-01"},
+  {"id":91,"lat":21.591,"lng":72.997,"type":"Illegal Cutting","timestamp":"2025-08-02"},
+  {"id":92,"lat":21.592,"lng":72.998,"type":"Dumping","timestamp":"2025-08-03"},
+  {"id":93,"lat":21.593,"lng":72.999,"type":"Erosion","timestamp":"2025-08-04"},
+  {"id":94,"lat":21.594,"lng":73.000,"type":"Illegal Cutting","timestamp":"2025-08-05"},
+  {"id":95,"lat":21.595,"lng":73.001,"type":"Dumping","timestamp":"2025-08-06"},
+  {"id":96,"lat":21.596,"lng":73.002,"type":"Erosion","timestamp":"2025-08-07"},
+  {"id":97,"lat":21.597,"lng":73.003,"type":"Illegal Cutting","timestamp":"2025-08-08"},
+  {"id":98,"lat":21.598,"lng":73.004,"type":"Dumping","timestamp":"2025-08-09"},
+  {"id":99,"lat":21.599,"lng":73.005,"type":"Erosion","timestamp":"2025-08-10"},
+  {"id":100,"lat":21.600,"lng":73.006,"type":"Illegal Cutting","timestamp":"2025-08-11"}
+];
+
+export const users: User[] = [
+  {"id":1,"name":"Amit","points":120,"badge":"Eco Warrior"},
+  {"id":2,"name":"Neha","points":80,"badge":"Mangrove Guardian"},
+  {"id":3,"name":"Ravi","points":100,"badge":"Eco Warrior"},
+  {"id":4,"name":"Priya","points":60,"badge":"Mangrove Guardian"},
+  {"id":5,"name":"Suresh","points":150,"badge":"Master Guardian"},
+  {"id":6,"name":"Ananya","points":90,"badge":"Eco Warrior"},
+  {"id":7,"name":"Rohan","points":50,"badge":"Newbie"},
+  {"id":8,"name":"Isha","points":70,"badge":"Mangrove Guardian"},
+  {"id":9,"name":"Karan","points":110,"badge":"Eco Warrior"},
+  {"id":10,"name":"Meera","points":95,"badge":"Eco Warrior"},
+  {"id":11,"name":"Aaditya","points":85,"badge":"Mangrove Guardian"},
+  {"id":12,"name":"Tara","points":130,"badge":"Master Guardian"},
+  {"id":13,"name":"Vikram","points":75,"badge":"Eco Warrior"},
+  {"id":14,"name":"Ritika","points":65,"badge":"Mangrove Guardian"},
+  {"id":15,"name":"Kabir","points":140,"badge":"Master Guardian"},
+  {"id":16,"name":"Anika","points":90,"badge":"Eco Warrior"},
+  {"id":17,"name":"Dev","points":55,"badge":"Newbie"},
+  {"id":18,"name":"Sana","points":95,"badge":"Eco Warrior"},
+  {"id":19,"name":"Arjun","points":125,"badge":"Master Guardian"},
+  {"id":20,"name":"Lila","points":105,"badge":"Eco Warrior"}
+];
+
+export const photoCollections: PhotoCollection = {
+  user_input_photos: [
+    "https://drive.google.com/drive/folders/1xcdkLkOdpiwLYVa6p23bAKJyvTiA2z1n"
+  ],
+  satellite_photos: [
+    "https://drive.google.com/drive/folders/1XmLJFMXfT3QJpBR605TZtJVg-uAKQAbE"
+  ]
+};
+
+// Helper functions
+export const getIncidentsByType = (type: Incident['type']) => {
+  return incidents.filter(incident => incident.type === type);
+};
+
+export const getIncidentsByDateRange = (startDate: string, endDate: string) => {
+  return incidents.filter(incident => {
+    const incidentDate = new Date(incident.timestamp);
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    return incidentDate >= start && incidentDate <= end;
+  });
+};
+
+export const getTopUsers = (limit: number = 10) => {
+  return users
+    .sort((a, b) => b.points - a.points)
+    .slice(0, limit);
+};
+
+export const getUsersByBadge = (badge: User['badge']) => {
+  return users.filter(user => user.badge === badge);
+};
