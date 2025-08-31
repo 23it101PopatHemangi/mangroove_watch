@@ -1,0 +1,27 @@
+{
+    "mangrove_locations": [
+      {"id":1,"lat":21.501,"lng":72.907}, {"id":2,"lat":21.502,"lng":72.908},
+      {"id":3,"lat":21.503,"lng":72.909}, {"id":4,"lat":21.504,"lng":72.910},
+      {"id":5,"lat":21.505,"lng":72.911}, {"id":6,"lat":21.506,"lng":72.912},
+      {"id":7,"lat":21.507,"lng":72.913}, {"id":8,"lat":21.508,"lng":72.914},
+      {"id":9,"lat":21.509,"lng":72.915}, {"id":10,"lat":21.510,"lng":72.916}
+    ],
+    "incidents": [
+      {"id":1,"lat":21.501,"lng":72.907,"type":"Illegal Cutting","timestamp":"2025-08-01"},
+      {"id":2,"lat":21.502,"lng":72.908,"type":"Dumping","timestamp":"2025-08-02"},
+      {"id":3,"lat":21.503,"lng":72.909,"type":"Erosion","timestamp":"2025-08-03"},
+      {"id":4,"lat":21.504,"lng":72.910,"type":"Illegal Cutting","timestamp":"2025-08-04"},
+      {"id":5,"lat":21.505,"lng":72.911,"type":"Dumping","timestamp":"2025-08-05"}
+    ],
+    "users": [
+      {"id":1,"name":"Amit","points":120,"badge":"Eco Warrior"},
+      {"id":2,"name":"Neha","points":80,"badge":"Mangrove Guardian"}
+    ],
+    "user_input_photos": [
+      "https://drive.google.com/drive/folders/1xcdkLkOdpiwLYVa6p23bAKJyvTiA2z1n"
+    ],
+    "satellite_photos": [
+      "https://drive.google.com/drive/folders/1XmLJFMXfT3QJpBR605TZtJVg-uAKQAbE"
+    ]
+  }
+  
