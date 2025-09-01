@@ -52,4 +52,4 @@ npm install
 
 ### 4. Run on respective server provided.
 
-### 5. if serevr crashes use .\start-app.bat
+### 5. if serevr crashes use **.\start-app.bat**
