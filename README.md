@@ -51,7 +51,13 @@ npm install
       npm start
 
 ### 4. Run on respective server provided.
-### 5. If server crashes use <b>`.\start-app.bat`</b>
+
+### 5. If server crashes, use:
+
+**Command:**
+```bash
+.\start-app.bat
+
 
 
 
